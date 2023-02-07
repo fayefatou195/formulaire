@@ -1,0 +1,81 @@
+
+body{
+font-family: Montserrat, "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+display: grid;
+place-items: center;
+min-height: 100vh;
+background-color:#7cadf7 ;
+}
+
+main {
+    
+    height: 100%;
+    width: 90%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    height: 80%;
+    width: 90%;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+label{
+    display: block;
+    font-size: 15px;
+  
+}
+input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 20px;
+}
+.group-button{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    display: block;
+    width: 100px;
+    height:5% ;
+    background-color:#7cadf7 ;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+
+}
+.btn-next{
+    padding: 10px;
+}
+/*page*/
+.nbre-page{
+    display: none;
+}
+.nbre-page-active{
+display: block;
+}
+
+input[type="radio"]{
+  display: inline;
+    width: 100px;
+}
+.radio-buttons{
+    display: flex;
+    width: 80%;
+}
+

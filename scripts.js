@@ -1,41 +1,27 @@
-const preceBtn = document.querySelectorAll(".btn-prece");
-const nextBtn = document.querySelectorAll(".btn-next");
-const pages = document.querySelectorAll(".nbre-page")
+var form = document.getElementById("form");
+var page1 = document.getElementById("page1");
+var page2 = document.getElementById("page2");
+var nextPage1 = document.getElementById("next-page1");
+var precePage2 = document.getElementById("prece-page2");
+var submitForm = document.getElementById("submit-form");
 
+nextPage1.addEventListener("click", function(e){
 
-
-let pagesNum = 0;
-
-nextBtn.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        pagesNum++;
-        updatepages();
+    e.preventDefault();
+    page1.style.display="none";
+    page2.style.display="block";
     });
-    
-})
 
-preceBtn.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        pagesNum--;
-        updatepages();
+    precePage2.addEventListener("click", function(e){
+        
+        e.preventDefault();
+        page2.style.display= "none";
+        page1.style.display= "block";
+      
     });
-    
-})
-
-    function updatepages() {
-        pages.forEach((pages) => {
-            pages.classList.contains("nbre-page-active") &&
-            pages.classList.remove("nbre-page-active");
-        });
-
-        pages[pagesNum].classList.add("nbre-page-active")
-    }
-
-
-
-
-
-
+    submitForm.addEventListener("click", function(){
+        form.submit();
+    })
 
 
 var ouiRadio = document.getElementById("oui-radio");
